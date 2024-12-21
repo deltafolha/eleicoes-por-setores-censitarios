@@ -1,4 +1,4 @@
-# Resultados eleitorais brasileiros por setor censitários
+# Resultados eleitorais brasileiros por setores censitários
 
 Estes códigos agregam os resultados das eleições por candidato, partido e ideologia pelos setores censitários.
 
