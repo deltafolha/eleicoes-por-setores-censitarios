@@ -60,8 +60,8 @@ Também é necessário instalar os pacotes presentes no arquivo `00_pacotes.R`.
 
 ## Resultados:
 
-Os códigos acima criam três pastas principais que contêm dados brutos (que são baixados pelo código `01_baixa_dados`), intermediários e processados. Os dados intermediários e processados se encontram aqui:
+Os códigos acima criam três pastas principais que contêm dados brutos (que são baixados pelo código `01_baixa_dados`), intermediários e processados. Os dados intermediários se encontram aqui:
 
-* [Locais de votação georeferenciados](https://www.dropbox.com/scl/fo/y5gvm0gfew0za2w2d70ct/AOZ8QYvCIB0XvUMQsW20dAI?rlkey=cx1xtjnxb5wyin0maca9tmps2&st=28bd9ahd&dl=0) (criado pelo código `02_geolocalizacao_lv`)
-* [Relação dos locais de votação com setores censitários](https://www.dropbox.com/scl/fo/2l7qs4no7ze4tt3kk53n5/AEsGn1tQOgb1PxeS2m9zulg?rlkey=2skbxwxan9oqxltrx7v962e39&st=u8lvnzcd&dl=0) (criadas pelo código `03_relacao_setor_lv`)
-* [Resultado agregado por setores censitários](https://www.dropbox.com/scl/fo/x6nxug1933obiw1tlsy3k/ABFCnXLnE5lTYXwxKlYPsPo?rlkey=ecysc2644buthzg7ojduc8dpb&st=8f5738us&dl=0) (criados pelo código `04_resultados_por_setor`)
+* [Locais de votação georeferenciados](https://www.dropbox.com/scl/fo/y5gvm0gfew0za2w2d70ct/AOZ8QYvCIB0XvUMQsW20dAI?rlkey=iu2l797ne8nsunk9jyac0cm3k&st=6xwuvinc&dl=0)(criado pelo código `02_geolocalizacao_lv`): Cada arquivo contém os locais de votação de uma cidade. O nome dos arquivos são os códigos IBGE das cidade. No caso de Boa Esperança do Norte - que ainda não existia em 2024 - usei 5106241.
+* [Relação dos locais de votação com setores censitários](https://www.dropbox.com/scl/fo/2l7qs4no7ze4tt3kk53n5/AEsGn1tQOgb1PxeS2m9zulg?rlkey=2skbxwxan9oqxltrx7v962e39&st=u8lvnzcd&dl=0) (criadas pelo código `03_relacao_setor_lv`): Há duas pastas, uma para cada malha de setores censtitários. Os arquivos dentro dentro das pastas das malhas estão estão nomeados como `<id_ibge_municipio>_<ano_eleicao>_<turno>.csv`
+* [Resultado agregado por setores censitários](https://www.dropbox.com/scl/fo/x6nxug1933obiw1tlsy3k/ABFCnXLnE5lTYXwxKlYPsPo?rlkey=ecysc2644buthzg7ojduc8dpb&st=8f5738us&dl=0) (criados pelo código `04_resultados_por_setor`): Os arquivos estão nomedos como `<ano_malha>_<id_ibge_cidade>_<ano_eleicao>_<cargo>_<turno>_<classe_de_agregacao>.csv` (São muitos dados - 715 mil arquivos que totalizam 189 gb, estou tentando uma forma melhor de disponibilizar).
